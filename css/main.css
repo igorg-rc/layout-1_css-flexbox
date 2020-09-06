@@ -1,0 +1,252 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  /* Escaping from overlapping of navbar and footer on content of the pages*/
+  padding-bottom: -20px; 
+  background: #d7d7d7;
+  min-height: 400px;
+  
+  margin-bottom: 100px;
+  clear: both;
+  background: #e4e4e4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+/* Header */
+.nav{
+  height: 60px;
+  background: #222222;
+  border-color: #080808;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav ul{
+  text-decoration: none;
+  display: flex;
+  list-style:none;
+  
+}
+
+a{
+  color: #303030;
+}
+
+a:hover{
+  color: #22e639;
+}
+
+.nav img{
+  height: 60px;
+  padding: 0 5px;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: #9d9d9d;
+  font-size: 16pt;
+  padding: 0 10px;
+}
+
+.nav ul li a:hover{
+  color: #22e639; 
+}
+
+.contacts-points, .copyright{
+  color: #9d9d9d;
+  padding: 0 10px;
+  margin-left: auto;
+  text-align: left;
+  font-size: 14pt;
+  align-self: center;
+}
+
+/* Styling content */
+.page-title{
+  text-align: center;
+  color: #303030;
+  font-size: 20pt;
+  padding: 20px 0;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Services page */
+.card{
+  padding: 0 5px 20px 5px; 
+  
+}
+.card p{
+  padding: 5px 0;
+}
+
+.card .btn{
+  background-color: #222222;
+  color: #9d9d9d;
+  text-decoration: none;
+  font-size: 12pt;
+  padding: 3px 3px;
+  margin: 5px 0;
+  border: 1px solid #9d9d9d;
+}
+.card .btn:hover{
+  color: #22e639;
+  border: 1px solid #22e639;
+}
+
+/* contacts page */
+  
+.places{ 
+  margin: 5px;
+  width: 32%;
+  height: auto; 
+  color: #303030;
+  font-weight: bold;
+} 
+
+.places img{
+  max-width: 100%;
+  height: auto;
+  justify-self: center;
+}
+
+#address{
+  width: 100%;
+  padding: 20px 30px;
+  text-align: left;
+}
+
+#map{
+  max-width: 98.5%;
+  padding-left: 30px;
+  text-align: center;
+}
+
+/* Services inner pages (laser, XRD etc.) */
+
+/* .inner-pages{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+} */
+
+.img-pages{
+  width: 50%;
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.inner-pages{
+  max-width: 100%;
+  color: #080808;
+  text-align: justify;
+  font-size: 15pt;
+  padding: 0 20px;
+}
+
+.text-pages{
+  margin-left: 3%;
+}
+.text-pages ul{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.inner-pages ul li{
+  padding: 5px 0;
+}
+
+/* Footer */
+footer {  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.copyright{
+  color: #9d9d9d;
+  padding: 3px 10px;
+}
+
+.social-icons{
+  margin-left: auto;
+}
+
+@media(max-width:850px){
+  .places{
+    width: 100%;
+    text-align: center;
+  }
+
+  #map{
+    width: 99%;
+    padding-left: 5px; 
+    margin: 0 auto;
+  }
+  
+  #address{
+    font-size: 10pt;
+    max-width: 90%;
+  }
+  .card img{
+    width: auto;
+  }
+
+  .inner-pages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .img-pages{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .text-pages{
+    max-width: 95%;
+    text-align: justify;
+    font-size: 13pt;
+  }
+}
+
+@media(min-width:478px){
+  .card{
+    width: 50%;
+    max-width: 100%;
+  }
+  .card img, .places img{
+    width: 100%;
+  }
+}
+
+@media(min-width:850px){
+  .card{
+    width: 33%;
+    max-width: 100%;
+  }
+}
+
+@media(min-width:1800px){
+  .card{
+    width: 16.6%;
+    max-width: 100%;
+  }
+  .card img, .places img{
+    width: 100%;
+  }
+}
+
